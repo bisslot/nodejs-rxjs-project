@@ -1,0 +1,29 @@
+{
+  "name": "api-aggregation-rxjs",
+  "version": "1.0.0",
+  "description": "A demo of API aggregation using Node.js, Express, and RxJS.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:mock": "nodemon mock-apis/mockApiServer.js",
+    "dev": "concurrently \"npm:start\" \"npm:start:mock\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rxjs",
+    "express",
+    "api-aggregation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}
